@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Ticketing</title>
+    <!-- Google Fonts for custom fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Inter and Raleway Google Fonts for typography -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Fornt awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- DaisyUI CSS and Tailwind CSS for styling -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Style customization -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1DD100',
+                        secondary: '#030712',
+                        'coupon-primary': '#FFBF0F',
+                        'coupon-secondary': '#F78C9C'
+                    },
+                    fontFamily: {
+                        RaleWay: 'Raleway',
+                        Inter: 'Inter'
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-RaleWay">
+    <!-- header start from here -->
+    <header class="container mx-auto">
+        <!-- Navigation bar for smart ticketing system -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <a class="text-2xl font-bold">P-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+
+                    <a
+                        class="btn text-primary bg-primary bg-opacity-10 border-primary px-8 hover:text-white hover:bg-primary">Bus<i
+                            class="fa-solid fa-bus"></i></a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section start from here -->
+        <section class="bg-[url('./images/banner.png')] bg-cover bg-center relative">
+
+            <!-- hero Content -->
+            <div class="flex flex-col gap-10 justify-center items-center py-36">
+                <h1 class="text-6xl font-bold text-white text-center">End-to-End Travel with <br> <span
+                        class="text-primary">P Paribahan</span></h1>
+                <p class="text-white text-center">Yes, you can run unit tests and view the results directly within the
+                    app. The <br> integrated testing features allow for a streamlined .</p>
+                <div>
+                    <button class="btn bg-primary border-none">Buy Tickets</button>
+                </div>
+            </div>
+
+            <!-- card-start -->
+            <div class="absolute flex gap-5 w-full justify-center -bottom-16">
+                <!-- card-1 -->
+                <div class="card bg-base-100 w-80 shadow-xl border-b-4 border-primary">
+                    <div class="card-body">
+                        <div class="flex justify-center items-center gap-5">
+                            <img src="./images/people.png" alt="" class="border border-stone-400 border-dashed">
+                            <div class="space-y-2">
+                                <h2 class="text-4xl font-bold">500K+</h2>
+                                <p>Registered users</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-2 -->
+                <div class="card bg-base-100 w-80 shadow-xl border-b-4 border-primary">
+                    <div class="card-body">
+                        <div class="flex justify-center items-center gap-5">
+                            <img src="./images/ticket-cupon.png" alt="" class="border border-stone-400 border-dashed">
+                            <div class="space-y-2">
+                                <h2 class="text-4xl font-bold">1.7 lacks</h2>
+                                <p>Tickets sold</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-3 -->
+                <div class="card bg-base-100 w-80 shadow-xl border-b-4 border-primary">
+                    <div class="card-body">
+                        <div class="flex justify-center items-center gap-5">
+                            <img src="./images/stoppage.png" alt="" class="border border-stone-400 border-dashed">
+                            <div class="space-y-2">
+                                <h2 class="text-4xl font-bold">80K+</h2>
+                                <p>Rental partners</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <!-- Best offers for you section -->
+        <section class="container mx-auto mt-40 flex flex-col items-center gap-12">
+            <h2 class="text-4xl font-bold text-center">Best offers for you</h2>
+
+            <!-- Coupon offers -->
+            <div class="flex justify-between gap-5 w-full">
+                <!-- coupon-1 -->
+                <div class="card bg-coupon-primary w-1/2 shadow-xl relative h-[220px]">
+                    <div class="absolute top-0 right-64"><img src="./images/cupon-devider.png" alt=""></div>
+                    <div class="h-[220px] flex justify-around items-center gap-5">
+                        <div class="flex flex-col gap-3">
+                            <h3 class="text-4xl font-bold"> 15% OFF</h3>
+                            <p class="font-bold">on your next purchase</p>
+                            <p class="text-stone-600 text-sm">use by January 2024</p>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <h3 class="text-3xl font-semibold">NEW15</h3>
+                            <p class="text-stone-600 text-sm">Coupon Code</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coupon-2 -->
+                <div class="card bg-coupon-secondary w-1/2 shadow-xl relative h-[220px]">
+                    <div class="absolute top-0 right-64"><img src="./images/cupon-devider.png" alt=""></div>
+                    <div class="h-[220px] flex justify-around items-center gap-5">
+                        <div class="flex flex-col gap-3">
+                            <h3 class="text-4xl font-bold"> 20% OFF</h3>
+                            <p class="font-bold">on your next purchase</p>
+                            <p class="text-stone-600 text-sm">use by January 2024</p>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <h3 class="text-3xl font-semibold">Couple 20</h3>
+                            <p class="text-stone-600 text-sm">Coupon Code</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+            <button class="btn btn-outline text-primary border-primary hover:bg-primary hover:border-none">See All Offers</button>
+        </div>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
