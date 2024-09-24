@@ -212,7 +212,7 @@
                             <!-- Total seat -->
                             <div class="flex gap-2 items-center px-5 rounded-xl bg-primary bg-opacity-10">
                                 <img src="./images/seat-green.png" alt="" class="border border-stone-300 border-dashed">
-                                <p class="text-primary">40 Seats left</p>
+                                <p class="text-primary"><span id="seat-left">40</span> Seats left</p>
                             </div>
                         </div>
                         <div class="bg-bg-primary rounded-xl p-5">
@@ -286,83 +286,83 @@
 
                                 <!-- First row -->
                                 <p class="col-span-1 btn bg-white border-none">A</p>
-                                <button class="btn col-span-2 text-stone-500">A1</button>
-                                <button class="btn col-span-2 text-stone-500">A2</button>
+                                <button class="btn col-span-2 text-stone-500" onclick="selectSeat(this)">A1</button>
+                                <button class="btn col-span-2 text-stone-500" onclick="selectSeat(this)">A2</button>
                                 <div class="col-span-2"></div>
-                                <button class="btn col-span-2 text-stone-500">A3</button>
-                                <button class="btn col-span-2 text-stone-500">A4</button>
+                                <button class="btn col-span-2 text-stone-500" onclick="selectSeat(this)">A3</button>
+                                <button class="btn col-span-2 text-stone-500" onclick="selectSeat(this)">A4</button>
 
                                 <!-- Second-Row -->
 
                                 <p class="col-span-1 btn bg-white border-none">B</p>
-                                <button class="btn col-span-2 text-stone-500">B1</button>
-                                <button class="btn col-span-2 text-stone-500">B2</button>
+                                <button class="btn col-span-2 text-stone-500" onclick="selectSeat(this)">B1</button>
+                                <button class="btn col-span-2 text-stone-500" onclick="selectSeat(this)">B2</button>
                                 <div class="col-span-2"></div>
-                                <button class="btn col-span-2 text-stone-500">B3</button>
-                                <button class="btn col-span-2 text-stone-500">B4</button>
+                                <button class="btn col-span-2 text-stone-500" onclick="selectSeat(this)">B3</button>
+                                <button class="btn col-span-2 text-stone-500" onclick="selectSeat(this)">B4</button>
                                 <!-- Third-Row -->
 
                                 <p class="col-span-1 btn bg-white border-none">C</p>
-                                <button class="btn col-span-2 text-stone-500">C1</button>
-                                <button class="btn col-span-2 text-stone-500">C2</button>
+                                <button class="btn col-span-2 text-stone-500" onclick="selectSeat(this)">C1</button>
+                                <button class="btn col-span-2 text-stone-500" onclick="selectSeat(this)">C2</button>
                                 <div class="col-span-2"></div>
-                                <button class="btn col-span-2 text-stone-500">C3</button>
-                                <button class="btn col-span-2 text-stone-500">C4</button>
+                                <button class="btn col-span-2 text-stone-500" onclick="selectSeat(this)">C3</button>
+                                <button class="btn col-span-2 text-stone-500" onclick="selectSeat(this)">C4</button>
                                 <!-- Fourth-Row -->
 
                                 <p class="col-span-1 btn bg-white border-none">D</p>
-                                <button class="btn col-span-2 text-stone-500">D1</button>
-                                <button class="btn col-span-2 text-stone-500">D2</button>
+                                <button class="btn col-span-2 text-stone-500" onclick="selectSeat(this)">D1</button>
+                                <button class="btn col-span-2 text-stone-500" onclick="selectSeat(this)">D2</button>
                                 <div class="col-span-2"></div>
-                                <button class="btn col-span-2 text-stone-500">D3</button>
-                                <button class="btn col-span-2 text-stone-500">D4</button>
+                                <button class="btn col-span-2 text-stone-500" onclick="selectSeat(this)">D3</button>
+                                <button class="btn col-span-2 text-stone-500" onclick="selectSeat(this)">D4</button>
                                 <!-- Fifth-Row -->
 
                                 <p class="col-span-1 btn bg-white border-none">E</p>
-                                <button class="btn col-span-2 text-stone-500">E1</button>
-                                <button class="btn col-span-2 text-stone-500">E2</button>
+                                <button class="btn col-span-2 text-stone-500" onclick="selectSeat(this)">E1</button>
+                                <button class="btn col-span-2 text-stone-500" onclick="selectSeat(this)">E2</button>
                                 <div class="col-span-2"></div>
-                                <button class="btn col-span-2 text-stone-500">E3</button>
-                                <button class="btn col-span-2 text-stone-500">E4</button>
+                                <button class="btn col-span-2 text-stone-500" onclick="selectSeat(this)">E3</button>
+                                <button class="btn col-span-2 text-stone-500" onclick="selectSeat(this)">E4</button>
                                 <!-- Sixth-Row -->
 
                                 <p class="col-span-1 btn bg-white border-none">F</p>
-                                <button class="btn col-span-2 text-stone-500">F1</button>
-                                <button class="btn col-span-2 text-stone-500">F2</button>
+                                <button class="btn col-span-2 text-stone-500" onclick="selectSeat(this)">F1</button>
+                                <button class="btn col-span-2 text-stone-500" onclick="selectSeat(this)">F2</button>
                                 <div class="col-span-2"></div>
-                                <button class="btn col-span-2 text-stone-500">F3</button>
-                                <button class="btn col-span-2 text-stone-500">F4</button>
+                                <button class="btn col-span-2 text-stone-500" onclick="selectSeat(this)">F3</button>
+                                <button class="btn col-span-2 text-stone-500" onclick="selectSeat(this)">F4</button>
                                 <!-- Seventh-Row -->
 
                                 <p class="col-span-1 btn bg-white border-none">G</p>
-                                <button class="btn col-span-2 text-stone-500">G1</button>
-                                <button class="btn col-span-2 text-stone-500">G2</button>
+                                <button class="btn col-span-2 text-stone-500" onclick="selectSeat(this)">G1</button>
+                                <button class="btn col-span-2 text-stone-500" onclick="selectSeat(this)">G2</button>
                                 <div class="col-span-2"></div>
-                                <button class="btn col-span-2 text-stone-500">G3</button>
-                                <button class="btn col-span-2 text-stone-500">G4</button>
+                                <button class="btn col-span-2 text-stone-500" onclick="selectSeat(this)">G3</button>
+                                <button class="btn col-span-2 text-stone-500" onclick="selectSeat(this)"> G4</button>
                                 <!-- Eighth-Row -->
 
                                 <p class="col-span-1 btn bg-white border-none">H</p>
-                                <button class="btn col-span-2 text-stone-500">H1</button>
-                                <button class="btn col-span-2 text-stone-500">H2</button>
+                                <button class="btn col-span-2 text-stone-500" onclick="selectSeat(this)">H1</button>
+                                <button class="btn col-span-2 text-stone-500" onclick="selectSeat(this)">H2</button>
                                 <div class="col-span-2"></div>
-                                <button class="btn col-span-2 text-stone-500">H3</button>
-                                <button class="btn col-span-2 text-stone-500">H4</button>
+                                <button class="btn col-span-2 text-stone-500" onclick="selectSeat(this)">H3</button>
+                                <button class="btn col-span-2 text-stone-500" onclick="selectSeat(this)">H4</button>
                                 <!-- Ninth-Row -->
 
                                 <p class="col-span-1 btn bg-white border-none">I</p>
-                                <button class="btn col-span-2 text-stone-500">I1</button>
-                                <button class="btn col-span-2 text-stone-500">I2</button>
+                                <button class="btn col-span-2 text-stone-500" onclick="selectSeat(this)">I1</button>
+                                <button class="btn col-span-2 text-stone-500" onclick="selectSeat(this)">I2</button>
                                 <div class="col-span-2"></div>
-                                <button class="btn col-span-2 text-stone-500">I3</button>
-                                <button class="btn col-span-2 text-stone-500">I4</button>
+                                <button class="btn col-span-2 text-stone-500" onclick="selectSeat(this)">I3</button>
+                                <button class="btn col-span-2 text-stone-500" onclick="selectSeat(this)">I4</button>
                                 <!-- Tenth-Row -->
                                 <p class="col-span-1 btn bg-white border-none">J</p>
-                                <button class="btn col-span-2 text-stone-500">J1</button>
-                                <button class="btn col-span-2 text-stone-500">J2</button>
+                                <button class="btn col-span-2 text-stone-500" onclick="selectSeat(this)">J1</button>
+                                <button class="btn col-span-2 text-stone-500" onclick="selectSeat(this)">J2</button>
                                 <div class="col-span-2"></div>
-                                <button class="btn col-span-2 text-stone-500">J3</button>
-                                <button class="btn col-span-2 text-stone-500">J4</button>
+                                <button class="btn col-span-2 text-stone-500" onclick="selectSeat(this)">J3</button>
+                                <button class="btn col-span-2 text-stone-500" onclick="selectSeat(this)">J4</button>
 
 
                             </div>
@@ -378,38 +378,37 @@
                             <div class="grid grid-cols-3 gap-5">
                                 <div class="indicator">
                                     <span
-                                        class="indicator-item bg-primary text-xs px-2 rounded-full text-white font-bold">2</span>
+                                        class="indicator-item bg-primary text-xs px-2 rounded-full text-white font-bold"
+                                        id="seat-count">0</span>
                                     <p class="font-bold ">Seat</p>
                                 </div>
                                 <p class="font-bold text-center">Class</p>
                                 <p class="font-bold text-center">Price</p>
                             </div>
                             <div class="border border-dashed"></div>
-                            <div class="grid grid-cols-3 gap-5">
-                                <!-- First row -->
-                                <p class="text-stone-500 ">C2</p>
-                                <p class="text-stone-500 text-center">Economy</p>
-                                <p class="text-slate-500 text-center">550</p>
-                                <!-- Second Row -->
-                                <p class="text-stone-500">C2</p>
-                                <p class="text-stone-500 text-center">Economy</p>
-                                <p class="text-slate-500 text-center">550</p>
+                            <div class="grid grid-cols-3 gap-5" id="seat-details">
+                                <h2 class="col-span-3 space-y-2 text-center text-red-500" id="no-seat">No seat selected
+                                    yet</h2>
+
+
                             </div>
                             <div>
                                 <div class="border border-dashed"></div>
                                 <div class="flex justify-between">
                                     <p class="font-bold">Total Price</p>
-                                    <p class="font-bold">BDT 1100</p>
+                                    <p class="font-bold"><span id="total-price">0</span> BDT</p>
                                 </div>
                             </div>
                             <div><label class="input  flex items-center gap-2">
-                                    <input type="text" class="grow border-none" placeholder="Have any coupon?" />
-                                    <span class="btn bg-primary py-0 relative left-4 text-white">Apply</span>
+                                    <input type="text" class="grow border-none" placeholder="Have any coupon?"
+                                        id="coupon-code" />
+                                    <span class="btn bg-primary py-0 relative left-4 text-white btn-disabled"
+                                        id="apply-coupon">Apply</span>
                                 </label></div>
                             <div>
                                 <div class="flex justify-between">
                                     <p class="font-bold">Grand Total</p>
-                                    <p class="font-bold">BDT 1100</p>
+                                    <p class="font-bold">BDT <span id="grand-total">0</span></p>
                                 </div>
                             </div>
                         </div>
@@ -420,22 +419,20 @@
                                 <label class="label">
                                     <span class="font-bold">Passenger Name*</span>
                                 </label>
-                                <input type="email" placeholder="Enter your name" class="input input-bordered"
-                                    required />
+                                <input type="text" placeholder="Enter your name" class="input input-bordered" />
                             </div>
                             <div class="form-control">
                                 <label class="label">
                                     <span class="font-bold">Phone Number*</span>
                                 </label>
-                                <input type="email" placeholder="Enter your phone number" class="input input-bordered"
-                                    required />
+                                <input type="number" placeholder="Enter your phone number" class="input input-bordered"
+                                    id="phone-number" />
                             </div>
                             <div class="form-control">
                                 <label class="label">
                                     <span class="font-bold">Email ID</span>
                                 </label>
-                                <input type="password" placeholder="Enter your email id" class="input input-bordered"
-                                    required />
+                                <input type="email" placeholder="Enter your email id" class="input input-bordered" />
                                 <label class="label">
                                     <a href="#" class="label-text-alt link link-hover">Terms and Conditions</a>
 
@@ -444,10 +441,22 @@
                             </div>
 
                             <div class="form-control mt-2">
-                                <button class="btn bg-primary text-white font-semibold">Next</button>
+                                <button class="btn bg-primary text-white font-semibold btn-disabled"
+                                    onclick="my_modal_1.showModal()" id="confirm-ticket">Next</button>
                             </div>
                         </form>
-
+                        <dialog id="my_modal_1" class="modal">
+                            <div class="modal-box">
+                                <h3 class="text-lg font-bold">Congratulations!</h3>
+                                <p class="py-4">Thank you for purchasing ticket from us!</p>
+                                <div class="modal-action">
+                                    <form method="dialog">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button class="btn">Close</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </dialog>
 
                     </div>
 
@@ -496,6 +505,9 @@
         </div>
 
     </footer>
+
+    <script src="./javaScript/utilities.js"></script>
+    <script src="./javaScript/app.js"></script>
 </body>
 
 </html>
