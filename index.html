@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -79,7 +79,7 @@
                 </div>
                 <div class="navbar-end">
 
-                    <a
+                    <a href="#bus"
                         class="btn text-primary bg-primary bg-opacity-10 border-primary px-8 hover:text-white hover:bg-primary">Bus<i
                             class="fa-solid fa-bus"></i></a>
                 </div>
@@ -93,15 +93,16 @@
             <div class="flex flex-col gap-10 justify-center items-center py-36">
                 <h1 class="text-6xl font-bold text-white text-center">End-to-End Travel with <br> <span
                         class="text-primary">P Paribahan</span></h1>
-                <p class="text-white text-center">Yes, you can run unit tests and view the results directly within the
+                <p class="text-white text-center p-2">Yes, you can run unit tests and view the results directly within
+                    the
                     app. The <br> integrated testing features allow for a streamlined .</p>
                 <div>
-                    <button class="btn bg-primary border-none">Buy Tickets</button>
+                    <button class="btn bg-primary border-none"><a href="#seat">Buy Tickets</a></button>
                 </div>
             </div>
 
             <!-- card-start -->
-            <div class="absolute flex gap-5 w-full justify-center -bottom-16 flex-col md:flex-row">
+            <div class="md:absolute flex gap-5 w-full justify-center -bottom-16 flex-col md:flex-row p-2">
                 <!-- card-1 -->
                 <div class="card bg-base-100 w-80 shadow-xl border-b-4 border-primary">
                     <div class="card-body">
@@ -143,7 +144,7 @@
     </header>
     <main>
         <!-- Best offers for you section -->
-        <section class="container mx-auto mt-40 flex flex-col items-center gap-12">
+        <section class="container mx-auto mt-40 flex flex-col items-center gap-12 p-2">
             <h2 class="text-4xl font-bold text-center">Best offers for you</h2>
 
             <!-- Coupon offers -->
@@ -192,15 +193,15 @@
                 <!-- Container-text -->
                 <div class="flex flex-col gap-5">
                     <h2 class="text-4xl font-bold text-center">P.H Paribahan</h2>
-                    <p class="text-stone-500 text-center">Yes, you can run unit tests and view the results directly
+                    <p class="text-stone-500 text-center p-2">Yes, you can run unit tests and view the results directly
                         within the app. The integrated <br> testing features allow for a streamlined .</p>
                 </div>
 
                 <!-- Journey details- Greenline Paribahan -->
 
-                <div class="card bg-white rounded-xl grid grid-cols-12 mt-10">
-                    <div class="col-span-9 p-5 flex flex-col justify-center">
-                        <div class="flex justify-between mb-10">
+                <div class="card bg-white rounded-xl grid grid-cols-12 mt-10" id="bus">
+                    <div class="col-span-12 md:col-span-9 p-5 flex flex-col justify-center">
+                        <div class="flex justify-between mb-10 flex-col md:flex-row gap-5">
                             <!-- Name of bus -->
                             <div class="flex gap-5 items-center">
                                 <img src="./images/bus-logo.png" alt="" class="border border-stone-300 border-dashed">
@@ -228,7 +229,7 @@
                             </div>
                             <div class="border border-dashed my-3"></div>
                             <!-- Boarding Point - Laxmipur -->
-                            <div class="flex justify-between">
+                            <div class="flex justify-between gap-2">
                                 <div class="flex gap-2 items-center px-5 py-3 rounded-xl bg-stone-200">
 
                                     <p>Boarding Point - Laxmipur</p>
@@ -246,7 +247,7 @@
                         </div>
                     </div>
 
-                    <div class="col-span-3 relative flex gap-10">
+                    <div class="col-span-12 md:col-span-3 relative flex gap-10">
                         <img src="./images/info-devider.png" alt="">
                         <div class="flex flex-col justify-center items-center gap-2">
                             <img src="./images/fare.png" alt="">
@@ -260,9 +261,9 @@
                 </div>
 
                 <!-- Select Your Seat -->
-                <div class="grid grid-cols-12 bg-white rounded-xl mt-10 gap-5 p-5 grid-flow-col">
+                <div class="grid grid-cols-12 bg-white rounded-xl mt-10 gap-5 p-5" id="seat">
 
-                    <div class="col-span-7 p-5">
+                    <div class="col-span-12 md:col-span-7 p-5">
                         <h3 class="text-xl font-semibold">Select Your Seat</h3>
                         <div class="border border-dashed my-3"></div>
                         <div class="flex justify-between">
@@ -369,7 +370,7 @@
 
                         </div>
                     </div>
-                    <div class="col-span-5 p-5 border-l-2 border-dashed">
+                    <div class="col-span-12 md:col-span-5 p-5 border-l-2 border-dashed">
                         <h3 class="text-xl font-semibold">Select Your Seat</h3>
                         <div class="border border-dashed my-3"></div>
                         <!-- Seat Selection and calculation -->
@@ -470,9 +471,9 @@
     </main>
     <!-- Footer -->
     <footer class="bg-[#030712] py-24">
-        <div class="container mx-auto flex flex-col gap-7">
+        <div class="container mx-auto flex flex-col gap-7 p-2">
             <div class="flex justify-between">
-                <div>
+                <div class="w-1/2">
                     <a class="text-3xl font-bold text-white">P-Ticket</a>
                     <p class="text-stone-400">P-Ticket is a digital platform to make your <br> daily commuting better.
                     </p>
@@ -491,14 +492,14 @@
                 </div>
             </div>
             <div class="border border-stone-500 border-dashed my-3 "></div>
-            <div class="flex justify-between text-white">
+            <div class="flex flex-col md:flex-row justify-between text-white">
                 <div>
-                    <p>@all rights reserved, P-Ticket services limited.2024</p>
+                    <p class="text-center md:text-left">@all rights reserved, P-Ticket services limited.2024</p>
                 </div>
-                <div class="flex gap-7">
-                    <a href="">Terms & condition</a>
-                    <a href="">Return & refund policy</a>
-                    <a href="">Privacy policy</a>
+                <div class="flex gap-7 flex-col md:flex-row mt-10 md:mt-0">
+                    <a href="" class="text-center md:text-left">Terms & condition</a>
+                    <a href="" class="text-center md:text-left">Return & refund policy</a>
+                    <a href="" class="text-center md:text-left">Privacy policy</a>
                 </div>
             </div>
 
